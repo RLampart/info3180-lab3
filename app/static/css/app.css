@@ -1,3 +1,42 @@
 body {
     padding-top: 5rem;
 }
+
+h1::after{
+    content: "";
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: block;
+    height: 2px;
+    background: grey;
+
+}
+
+.legend{
+    color: red;
+}
+
+.form-field{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.form-control{
+    width: 60%;
+    padding: 10px;
+}
+
+
+div.form-message>.form-control{
+    width: 70%;
+}
+
+button.btn{
+    margin: 5px;
+    background-color: #0d6efd;
+    color:white;
+}
+
+.flashes{
+    color:rgb(124, 185, 32);
+}
