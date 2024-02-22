@@ -35,9 +35,9 @@ def contact():
             msg.body = message
             mail.send(msg) 
             flash('You have successfully filled out the form', 'success')
-            return redirect('/')
-       # else:
-        #    flash_errors(myform)
+            return redirect(url_for('home'))
+        else:
+            flash_errors(myform)
 
     return render_template('contact.html',form=ContactForm())
 
